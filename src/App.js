@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   useEffect(() => {
+      // const getEnteredStores = async () => {
+      //    const getDate = await fetch(
+      //       "https://quickocustomer.docs.apiary.io/#reference/0/get-stores-by-only-zipcode/get-the-stores-available-in-the-zipcode-entered",
+      //       {
+      //          method: "GET",
+      //          headers: {
+      //             "Content-Type": "application/json",
+      //             "X-User": "customer",
+      //          },
+      //       }
+      //    );
+      //    console.log(getDate);
+      // };
+      // getEnteredStores();
+   });
+   return (
+      <div className="App">
+         <h1>Hello world</h1>
+      </div>
+   );
 }
 
 export default App;
